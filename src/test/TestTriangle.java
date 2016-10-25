@@ -18,19 +18,19 @@ public class TestTriangle {
 	}
 	
 	@Test 
-	public void testScalene() {
+	public void testIsScalene() {
 	    Triangle triangle = new Triangle(2,3,4);
 	    assertEquals(triangle.getType(), Triangle.TriangleType.SCALENE);
 	}
 	
 	@Test 
-	public void testIsosceles() {
+	public void testIsIsosceles() {
 	    Triangle triangle = new Triangle(3,3,4);
 	    assertEquals(triangle.getType(), Triangle.TriangleType.ISOSCELES);
 	}
 	
 	@Test 
-	public void testEquilateral() {
+	public void testIsEquilateral() {
 	    Triangle triangle = new Triangle(1,1,1);
 	    assertEquals(triangle.getType(), Triangle.TriangleType.EQUILATERAL);
 	}

@@ -26,7 +26,7 @@ public class Triangle {
 	 * Returns true if the triangle is equilateral, all three sides are equal.
 	 * @return a boolean true if the triangle is equilateral, false otherwise
 	 */
-	public boolean isEquilateral() {
+	public final boolean isEquilateral() {
 		return (x == y && x == z);
 	}
 	
@@ -34,7 +34,7 @@ public class Triangle {
 	 * Returns true if the triangle is isosceles, two of the three sides are equal.
 	 * @return a boolean true if the triangle is isosceles, false otherwise
 	 */
-	public boolean isIsosceles() {
+	public final boolean isIsosceles() {
 		return (x == y && x != z) || (x == z && x != y);
 	}
 	
@@ -42,7 +42,7 @@ public class Triangle {
 	 * Returns true if the triangle is scalene, the three sides are unequal.
 	 * @return a boolean true if the triangle is scalene, false otherwise
 	 */
-	public boolean isScalene() {
+	public final boolean isScalene() {
 		return (x != y && x != z && y != z);
 	}
 	
