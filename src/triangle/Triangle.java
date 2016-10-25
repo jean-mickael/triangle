@@ -23,24 +23,24 @@ public class Triangle {
 	}
 
 	/**
-	 * Return true is a triangle is equilateral, all three sides are equal.
-	 * @return a boolean 
+	 * Returns true if the triangle is equilateral, all three sides are equal.
+	 * @return a boolean true if the triangle is equilateral, false otherwise
 	 */
 	public boolean isEquilateral() {
 		return (x == y && x == z);
 	}
 	
 	/**
-	 * Return true is a triangle is isosceles, two of the three sides are equal.
-	 * @return a boolean 
+	 * Returns true if the triangle is isosceles, two of the three sides are equal.
+	 * @return a boolean true if the triangle is isosceles, false otherwise
 	 */
 	public boolean isIsosceles() {
 		return (x == y && x != z) || (x == z && x != y);
 	}
 	
 	/**
-	 * Return true is a triangle is scalene, the three sides are unequal.
-	 * @return a boolean 
+	 * Returns true if the triangle is scalene, the three sides are unequal.
+	 * @return a boolean true if the triangle is scalene, false otherwise
 	 */
 	public boolean isScalene() {
 		return (x != y && x != z && y != z);
@@ -48,7 +48,7 @@ public class Triangle {
 	
 	/**
 	 * Return the type of the triangle.
-	 * @return a {@link TriangleType}
+	 * @return the {@link TriangleType}
 	 */
 	public TriangleType getType() {
 		if (isIsosceles()) {

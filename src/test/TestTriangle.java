@@ -19,7 +19,7 @@ public class TestTriangle {
 	
 	@Test 
 	public void testScalene() {
-	    Triangle triangle = new Triangle(1,3,4);
+	    Triangle triangle = new Triangle(2,3,4);
 	    assertEquals(triangle.getType(), Triangle.TriangleType.SCALENE);
 	}
 	
