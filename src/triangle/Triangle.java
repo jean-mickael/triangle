@@ -47,7 +47,7 @@ public class Triangle {
 	}
 	
 	/**
-	 * Return the type of the triangle.
+	 * Returns the type of the triangle.
 	 * @return the {@link TriangleType}
 	 */
 	public TriangleType getType() {
